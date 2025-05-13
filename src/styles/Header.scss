@@ -1,0 +1,18 @@
+@import 'variables';
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-lg 0;
+  border-bottom: 1px solid $border-color;
+  .logo-container {
+    max-width: 200px;
+    
+    .logo {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import 'variables';
+
+.search-bar {
+  width: 100%;
+  
+  @media (min-width: $breakpoint-md) {
+    width: 60%;
+  }
+  
+  form {
+    display: flex;
+    
+    input {
+      flex: 1;
+      padding: $spacing-md;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-md 0 0 $border-radius-md;
+      font-size: 16px;
+      outline: none;
+      
+      &:focus {
+        border-color: $primary-color;
+      }
+    }
+    
+    button {
+      padding: $spacing-md $spacing-lg;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0 $border-radius-md $border-radius-md 0;
+      cursor: pointer;
+      transition: background-color $transition-normal;
+      
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

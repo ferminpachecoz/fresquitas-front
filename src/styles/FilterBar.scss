@@ -1,0 +1,44 @@
+@import 'variables';
+
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  width: 100%;
+  
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+  }
+  
+  span {
+    font-weight: 500;
+    margin-right: $spacing-md;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    
+    button {
+      padding: $spacing-sm $spacing-md;
+      background-color: $card-background;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-sm;
+      cursor: pointer;
+      transition: all $transition-normal;
+      
+      &:hover {
+        border-color: $primary-color;
+      }
+      
+      &.active {
+        background-color: $primary-color;
+        color: white;
+        border-color: $primary-color;
+      }
+    }
+  }
+}

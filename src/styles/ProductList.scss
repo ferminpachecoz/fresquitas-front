@@ -1,0 +1,31 @@
+@import 'variables';
+
+.product-list-container {
+  margin-bottom: $spacing-xl;
+  
+  .no-products {
+    text-align: center;
+    padding: $spacing-xl;
+    background-color: $card-background;
+    border-radius: $border-radius-md;
+    box-shadow: $box-shadow;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: $spacing-lg;
+    
+    @media (min-width: $breakpoint-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Colors
+$primary-color: #f39c12;
+$secondary-color: #e67e22;
+$background-color: #f9f9f9;
+$card-background: #ffffff;
+$text-color: #333333;
+$light-text: #777777;
+$border-color: #e0e0e0;
+$error-color: #e74c3c;
+$success-color: #2ecc71;
+
+// Spacing
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Shadows
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;

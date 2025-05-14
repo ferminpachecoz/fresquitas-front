@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import "../styles/FilterBar.scss"
 
 const FilterBar = ({ onFilter, selectedFilter }) => {
-  const supermarkets = ["Coto", "Disco", "Carrefour", "Chango Mas", "Dia"]
+  const supermarkets = ["Coto", "Disco", "Carrefour", "Chango Mas", "Dia", "Bonprix"]
 
   return (
     <motion.div

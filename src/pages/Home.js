@@ -30,7 +30,7 @@ function Home() {
   const fetchProducts = async (page, supermarket = "") => {
     setLoading(true)
     try {
-      let url = `https://fresquitas-back.onrender.com/cervezas/baratas?page=${page}&limit=${limit}`
+      let url = `https://fresquitas-api.fly.dev/cervezas/baratas?page=${page}&limit=${limit}`
       if (supermarket) {
         url += `&supermercado=${encodeURIComponent(supermarket)}`
       }
@@ -69,7 +69,7 @@ function Home() {
     setSearchTerm(query)
 
     try {
-      const response = await fetch(`https://fresquitas-back.onrender.com/cervezas/buscar?query=${encodeURIComponent(query)}&page=${page}&limit=${limit}`)
+      const response = await fetch(`https://fresquitas-api.fly.dev/cervezas/buscar?query=${encodeURIComponent(query)}&page=${page}&limit=${limit}`)
       if (!response.ok) {
         throw new Error("Failed to search products")
       }

@@ -16,21 +16,21 @@ const ProductCard = ({ product }) => {
     >
       <div className="product-image">
         <img
-          src={product.imagen_url || "/placeholder.svg"}
-          alt={product.producto}
+          src={product.imagenUrl || "/placeholder.svg"}
+          alt={product.nombre}
           onError={(e) => {
             e.target.onerror = null
             e.target.src = "https://via.placeholder.com/170x170?text=No+Image"
           }}
         />
-        {product.descuento && <div className="discount-badge">{product.descuento}</div>}
+        {product.descuentos && <div className="discount-badge">{product.descuentos}</div>}
       </div>
       <div className="product-info">
-        <h3>{product.producto}</h3>
+        <h3>{product.nombre}</h3>
         <div className="supermarket">{product.supermercado}</div>
         <div className="price-info">
           <div className="price">${product.precio}</div>
-          <div className="price-per-liter">${product.precioxlitro} per liter</div>
+          <div className="price-per-liter">${product.precioLitro} por litro</div>
         </div>
       </div>
     </motion.div>
